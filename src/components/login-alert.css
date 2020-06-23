@@ -1,0 +1,69 @@
+body {
+  font-family: "Calibri";
+}
+.login-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.alertbox {
+  background-color: #273cd0;
+}
+
+#wallet-alert {
+  font-size: large;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 0px;
+  justify-content: center;
+}
+
+.wallet-alert-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: small;
+  color: white;
+}
+
+.wallet-alert-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: white;
+  font-size: small;
+}
+.link-wallet {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: white;
+  font-size: small;
+}
+
+.btn-alignment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#button {
+  border-radius: 30px;
+  background-color: #efc75e;
+  text-align: center;
+  color: white;
+  letter-spacing: 0px;
+}
+#logo-browser {
+  color: white;
+}
