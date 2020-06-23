@@ -1,0 +1,25 @@
+.parent-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: xx-small;
+  color: white;
+  background-color: #111e77;
+  box-shadow: 0px -5px 10px #00000040;
+}
+
+#footer-title {
+  font-size: small;
+}
+
+#link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.first-footer,
+.second-footer,
+.third-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
