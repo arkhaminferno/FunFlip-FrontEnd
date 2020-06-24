@@ -1,0 +1,279 @@
+.parent-game {
+  width: 100vw;
+  height: 100vh;
+  background-color: linear-gradient(180deg, #2a40db, #15206e);
+  background-image: url("/assets/wave.png") no-repeat;
+}
+.main-div-bg-white {
+  background-color: white;
+}
+.balances {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.balance-align {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: small;
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.step-one {
+  width: 150px;
+  margin: 5px;
+  box-shadow: 8px 8px 15px #0000001c;
+  opacity: 1;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+}
+.First {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  color: #e2b946;
+  font-size: large;
+}
+.First-amount {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.first-Step {
+  background: #111e77 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 6px #00000066;
+  opacity: 1;
+  height: 15vh;
+}
+
+.total-flip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  height: 10vh;
+}
+
+.amount-input {
+  border: 2px solid green;
+  border-radius: 10px 10px;
+}
+.youare {
+  font-size: x-small;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.select-amount {
+  color: white;
+  font-size: xx-small;
+  margin-left: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.details-first {
+  /* width: 20vw;
+  height: 85%; */
+}
+
+.youare-betting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.youare-betting-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.minus {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.heads {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  box-shadow: -4px -4px 8px #ffffff;
+  opacity: 1;
+}
+.row-center-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.col-center-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.h-align {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.h-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  font-size: medium;
+}
+.winning-chance {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: xx-small;
+  width: 100%;
+}
+.head-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+}
+.tails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  box-shadow: -4px -4px 8px #ffffff;
+  opacity: 1;
+}
+
+.tail-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5px;
+}
+.winning-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.head-img,
+.tail-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.tail-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tail-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.step-two {
+  width: 200px;
+}
+
+.second-Step {
+  background: #111e77 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 6px #00000066;
+  opacity: 1;
+  height: 15vh;
+}
+.second {
+  margin-left: 3px;
+  color: #e2b946;
+  font-size: large;
+}
+
+.select-betting {
+  font-size: xx-small;
+  margin-left: 3px;
+  color: white;
+}
+
+.star-coin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.selected {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.flip-coin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#flip-button {
+  border: 1px solid #220868;
+  box-shadow: 5px 5px 10px;
+  background: #efc75e 0% 0% no-repeat padding-box;
+  box-shadow: 5px 5px 10px #00000042;
+  border: 5px solid #220868;
+  opacity: 1;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#ip-box {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 2px 2px 10px #00000029;
+  border-radius: 30px;
+  opacity: 1;
+}
+
+.-bet {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ur-bet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  box-shadow: 2px 2px 10px #0000004f;
+  opacity: 1;
+  padding: 10px;
+}
+.head-tail-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

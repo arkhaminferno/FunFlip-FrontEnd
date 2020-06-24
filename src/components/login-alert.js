@@ -24,8 +24,8 @@ const Login = () => {
           <br />
           <div className="link-wallet">
             <div>
-              Chorme {"  "}
-              <AiFillChrome color={"white"} size={"1rem"} /> : {"  "}
+              Chorme :{" "}
+              {/* <AiFillChrome color={"white"} size={"1rem"} /> {"  "} */}
             </div>
             <div>
               <a
@@ -39,8 +39,8 @@ const Login = () => {
           </div>
           <div className="link-wallet">
             <div>
-              Firefox {"  "}
-              <DiFirefox color={"white"} size={"1rem"} /> : {"  "}
+              Firefox {"  "} : {"   "}
+              {/* <DiFirefox color={"white"} size={"1rem"} /> {"  "} */}
             </div>
             <div>
               {"   "}

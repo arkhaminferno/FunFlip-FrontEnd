@@ -32,6 +32,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   font-size: small;
   color: white;
 }
@@ -46,7 +47,8 @@ body {
 .link-wallet {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
+  width: 55%;
   color: white;
   font-size: small;
 }
