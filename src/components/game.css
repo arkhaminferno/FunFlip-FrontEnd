@@ -48,14 +48,15 @@ Input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  width: 20vw;
+  flex-basis: 20vw;
+  flex-wrap: wrap;
 
   background: white 0% 0% no-repeat padding-box;
 }
 .step-two {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .First {
   display: flex;
@@ -91,6 +92,7 @@ Input {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 20px;
 }
 .amount-align {
   display: flex;
@@ -98,8 +100,13 @@ Input {
   justify-content: center;
 }
 
+.jallad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .youare {
-  font-size: x-small;
+  font-size: small;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -146,7 +153,7 @@ Input {
 .heads:hover,
 .tails:hover {
   transition: all 0.2s ease-out;
-  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.5);
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
   top: -4px;
   border: 1px solid #ffffff;
   background-color: white;
@@ -254,6 +261,7 @@ Input {
   flex-direction: row;
   margin: 10px;
   justify-content: center;
+  border: 1px solid #d3a156;
 }
 
 .selected {
@@ -276,6 +284,7 @@ Input {
   box-shadow: 5px 5px 10px #00000042;
   border: 5px solid #220868;
   opacity: 1;
+  color: #666161;
 }
 
 .input-box {
@@ -285,10 +294,21 @@ Input {
 }
 
 #ip-box {
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 2px 2px 10px #00000029;
-  border-radius: 30px;
+  padding: 5px 50px;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  box-shadow: 0px -8px 15px #00000029;
   opacity: 1;
+  opacity: 1;
+  color: black;
+}
+#your-bet {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 9px;
+  opacity: 1;
+  color: black;
+  align-items: center;
+  cursor: default;
 }
 .-bet {
   background: #f5f5f5 0% 0% no-repeat padding-box;
@@ -306,4 +326,5 @@ Input {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 10px;
 }

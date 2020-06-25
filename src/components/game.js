@@ -76,33 +76,37 @@ export default class game extends Component {
                   </div>
                 </div>
               </div>
-              <div className="heads" onClick={this.renderHead}>
-                <div className="row-center-head">
-                  <div className="col-center-head">
-                    <div className="head-img">
-                      <img src="assets/head-small.png" height="40vh" />
-                    </div>
-                    <div className="head-description">
-                      <div className="h-align">
-                        <div className="h-top">Heads</div>
+              <div className="jallad">
+                <div className="heads" onClick={this.renderHead}>
+                  <div className="row-center-head">
+                    <div className="col-center-head">
+                      <div className="head-img">
+                        <img src="assets/head-small.png" height="40vh" />
                       </div>
-                      <div className="winning-chance">
-                        <div className="winning-col">winning chance is 50%</div>
+                      <div className="head-description">
+                        <div className="h-align">
+                          <div className="h-top">Heads</div>
+                        </div>
+                        <div className="winning-chance">
+                          <div className="winning-col">
+                            winning chance is 50%
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="tails" onClick={this.renderTail}>
-                <div className="tail-img">
-                  <img src="assets/tail-small.png" height="40vh" />
-                </div>
-                <div className="tail-description">
-                  <div className="tail-row">
-                    <div className="tail-col">Tails</div>
+                <div className="tails" onClick={this.renderTail}>
+                  <div className="tail-img">
+                    <img src="assets/tail-small.png" height="40vh" />
                   </div>
-                  <div className="winning-chance">
-                    <div className="winning-col">winning chance is 50%</div>
+                  <div className="tail-description">
+                    <div className="tail-row">
+                      <div className="tail-col">Tails</div>
+                    </div>
+                    <div className="winning-chance">
+                      <div className="winning-col">winning chance is 50%</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -137,7 +141,7 @@ export default class game extends Component {
             )}
 
             <div className="flip-coin">
-              <Button id="flip-button" placeholder="FLIP COIN" />
+              <Button id="flip-button"> FLIP COIN</Button>
             </div>
           </div>
           <div className="step-three">
@@ -149,10 +153,12 @@ export default class game extends Component {
               </div>
               <div className="first-Step">
                 <div className="First">
-                  <div className="fs"> First Step</div>
+                  <div className="fs"> Third Step</div>
                 </div>
                 <div className="First-amount">
-                  <div className="select-amount">Select an amount to bet</div>
+                  <div className="select-amount">
+                    Click "FLIP" and get the double <br /> of your bet
+                  </div>
                 </div>
               </div>
               <div className="main-div-bg-white">
@@ -163,19 +169,34 @@ export default class game extends Component {
                   <div className="youare-betting-align">
                     <div className="youare"> Payout on win</div>
                     <div className="input-box">
-                      <Button id="ip-box" />
+                      <Button id="ip-box"> 100 ETH</Button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="-bet">
-                <div className="ur-bet">
-                  <Button />
-                  <div className="head-tail-img">
-                    <img src="assets/star-head.png" width="50%" />
+              {this.state.headsclicked ? (
+                <>
+                  <div className="-bet">
+                    <div className="ur-bet">
+                      <Button id="your-bet">Your Bet</Button>
+                      <div className="head-tail-img">
+                        <img src="assets/star-head.png" width="50%" />
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </>
+              ) : (
+                <>
+                  <div className="-bet">
+                    <div className="ur-bet">
+                      <Button id="your-bet">Your Bet</Button>
+                      <div className="head-tail-img">
+                        <img src="assets/star-tail.png" width="50%" />
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>
