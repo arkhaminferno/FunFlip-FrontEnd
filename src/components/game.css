@@ -23,34 +23,44 @@
 .steps {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  width: 100vw;
 }
 
 .step-one {
-  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 5px;
+  width: 20vw;
   box-shadow: 8px 8px 15px #0000001c;
   opacity: 1;
   background: #f5f5f5 0% 0% no-repeat padding-box;
 }
+.step-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .First {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 50%;
+
   color: #e2b946;
   font-size: large;
+}
+.fs {
+  padding-left: 5px;
 }
 .First-amount {
   display: flex;
   flex-direction: row;
-  width: 100%;
 }
 .first-Step {
   background: #111e77 0% 0% no-repeat padding-box;
   box-shadow: 0px 5px 6px #00000066;
   opacity: 1;
-  height: 15vh;
+  padding: 5px;
 }
 
 .total-flip {
@@ -76,14 +86,10 @@
 .select-amount {
   color: white;
   font-size: xx-small;
-  margin-left: 4px;
+  padding-left: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-.details-first {
-  /* width: 20vw;
-  height: 85%; */
 }
 
 .youare-betting {
@@ -97,7 +103,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
 }
 
 .minus {
@@ -108,7 +113,7 @@
 .heads {
   display: flex;
   flex-direction: row;
-  margin: 5px;
+  justify-content: flex-start;
   background: #f5f5f5 0% 0% no-repeat padding-box;
   box-shadow: -4px -4px 8px #ffffff;
   opacity: 1;
@@ -140,19 +145,18 @@
   flex-direction: row;
   justify-content: center;
   font-size: xx-small;
-  width: 100%;
 }
 .head-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 5px;
+  padding: 8px;
 }
 .tails {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 5px;
+  justify-content: flex-start;
+
   background: #f5f5f5 0% 0% no-repeat padding-box;
   box-shadow: -4px -4px 8px #ffffff;
   opacity: 1;
@@ -162,13 +166,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 5px;
+  padding: 8px;
 }
 .winning-col {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
 }
 
 .head-img,
@@ -191,21 +194,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-}
-
-.step-two {
-  width: 200px;
 }
 
 .second-Step {
   background: #111e77 0% 0% no-repeat padding-box;
   box-shadow: 0px 5px 6px #00000066;
   opacity: 1;
-  height: 15vh;
+  padding: 5px;
 }
 .second {
-  margin-left: 3px;
+  padding-left: 3px;
   color: #e2b946;
   font-size: large;
 }
@@ -260,7 +258,6 @@
 .-bet {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 .ur-bet {
   display: flex;

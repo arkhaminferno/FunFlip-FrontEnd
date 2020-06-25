@@ -13,17 +13,16 @@ export default class game extends Component {
   render() {
     return (
       <div className="parent-game">
-        <div className="balances">
-          <div className="balance-align">
-            <div className="my-balance">My Balance - 100</div>
-            <div className="house-bankroll">House Bankroll : 2000</div>
-          </div>
-        </div>
         <div className="steps">
           <div className="step-one">
+            <div className="balances">
+              <div className="balance-align">
+                <div className="my-balance">My Balance - 100</div>
+              </div>
+            </div>
             <div className="first-Step">
               <div className="First">
-                <div> First Step</div>
+                <div className="fs"> First Step</div>
               </div>
               <div className="First-amount">
                 <div className="select-amount">Select an amount to bet</div>
@@ -103,9 +102,14 @@ export default class game extends Component {
           </div>
           <div className="step-three">
             <div className="step-one">
+              <div className="balances">
+                <div className="balance-align">
+                  <div className="house-bankroll">House Bankroll : 2000</div>
+                </div>
+              </div>
               <div className="first-Step">
                 <div className="First">
-                  <div> First Step</div>
+                  <div className="fs"> First Step</div>
                 </div>
                 <div className="First-amount">
                   <div className="select-amount">Select an amount to bet</div>
