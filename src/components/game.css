@@ -11,12 +11,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: white;
 }
 
 .balance-align {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   font-size: small;
 }
 
@@ -24,14 +25,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100vw;
 }
 
-.step-one {
+.step-one,
+.step-three {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 5px;
+
   width: 20vw;
   box-shadow: 8px 8px 15px #0000001c;
   opacity: 1;
@@ -41,6 +42,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 25px;
 }
 .First {
   display: flex;
@@ -107,7 +109,7 @@
 
 .minus {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 .heads {

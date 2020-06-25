@@ -139,6 +139,8 @@ export default class game extends Component {
             </div>
           </div>
         </div>
+
+        <div className="game-history-live"></div>
       </div>
     );
   }
