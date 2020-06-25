@@ -2,14 +2,37 @@ import React, { Component } from "react";
 import "./game.css";
 import { AiOutlineMinus } from "react-icons/ai";
 import { BsPlus } from "react-icons/bs";
-import { Button } from "reactstrap";
+import { Button, Input } from "reactstrap";
 export default class game extends Component {
   constructor() {
     super();
     this.state = {
-      name: "nun",
+      amount: 0,
+      headsclicked: true,
     };
   }
+
+  incrementAmount = () => {
+    this.setState({ amount: this.state.amount + 1 });
+  };
+
+  decrementAmount = () => {
+    if (this.state.amount == 0) {
+      return;
+    } else {
+      this.setState({ amount: this.state.amount - 1 });
+    }
+  };
+
+  renderHead = () => {
+    this.setState({ headsclicked: true });
+  };
+  renderTail = () => {
+    this.setState({ headsclicked: false });
+  };
+  changeinAmount = (e) => {
+    this.setState({ amount: e.target.value });
+  };
   render() {
     return (
       <div className="parent-game">
@@ -37,18 +60,23 @@ export default class game extends Component {
                   <div className="youare"> You are betting</div>
                   <div className="youare-betting-buttons">
                     <div className="minus">
-                      <AiOutlineMinus />
+                      <AiOutlineMinus onClick={this.decrementAmount} />
                     </div>
-                    <div className="amount-input">
-                      <div className="input-amount">z</div>
+                    <div className="amount-inp">
+                      <div className="amount-align">
+                        <Input
+                          placeholder={0 + " " + "ETH"}
+                          onChange={this.changeinAmount + " " + "ETH"}
+                        ></Input>
+                      </div>
                     </div>
                     <div className="plus">
-                      <BsPlus />
+                      <BsPlus onClick={this.incrementAmount} />
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="heads">
+              <div className="heads" onClick={this.renderHead}>
                 <div className="row-center-head">
                   <div className="col-center-head">
                     <div className="head-img">
@@ -59,22 +87,22 @@ export default class game extends Component {
                         <div className="h-top">Heads</div>
                       </div>
                       <div className="winning-chance">
-                        <div className="winning-col">winning chance is 10%</div>
+                        <div className="winning-col">winning chance is 50%</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="tails">
+              <div className="tails" onClick={this.renderTail}>
                 <div className="tail-img">
                   <img src="assets/tail-small.png" height="40vh" />
                 </div>
                 <div className="tail-description">
                   <div className="tail-row">
-                    <div className="tail-col">Heads</div>
+                    <div className="tail-col">Tails</div>
                   </div>
                   <div className="winning-chance">
-                    <div className="winning-col">winning chance is 10%</div>
+                    <div className="winning-col">winning chance is 50%</div>
                   </div>
                 </div>
               </div>
@@ -92,12 +120,24 @@ export default class game extends Component {
                 </div>
               </div>
             </div>
-            <div className="star-coin">
-              <img src="assets/star-head.png" width="50%" />
-            </div>
-            <div className="selected">Heads Selected !</div>
+            {this.state.headsclicked ? (
+              <React.Fragment>
+                <div className="star-coin">
+                  <img src="assets/star-head.png" width="50%" />
+                </div>
+                <div className="selected">Heads Selected!</div>{" "}
+              </React.Fragment>
+            ) : (
+              <React.Fragment>
+                <div className="star-coin">
+                  <img src="assets/star-tail.png" width="50%" />
+                </div>
+                <div className="selected">Tails Selected!</div>
+              </React.Fragment>
+            )}
+
             <div className="flip-coin">
-              <Button id="flip-button" value="FLIP COIN " />
+              <Button id="flip-button" placeholder="FLIP COIN" />
             </div>
           </div>
           <div className="step-three">

@@ -1,3 +1,19 @@
+::-webkit-input-placeholder {
+  text-align: center;
+}
+:-moz-placeholder {
+  text-align: center;
+}
+::-moz-placeholder {
+  text-align: center;
+}
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+Input {
+  text-align: center;
+}
 .parent-game {
   width: 100vw;
   height: 100vh;
@@ -34,15 +50,12 @@
   justify-content: center;
 
   width: 20vw;
-  box-shadow: 8px 8px 15px #0000001c;
-  opacity: 1;
-  background: #f5f5f5 0% 0% no-repeat padding-box;
+
+  background: white 0% 0% no-repeat padding-box;
 }
 .step-two {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 25px;
 }
 .First {
   display: flex;
@@ -74,11 +87,17 @@
   background-color: #f5f5f5;
   height: 10vh;
 }
-
-.amount-input {
-  border: 2px solid green;
-  border-radius: 10px 10px;
+.amount-inp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+.amount-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .youare {
   font-size: x-small;
   display: flex;
@@ -107,11 +126,14 @@
   justify-content: space-between;
 }
 
-.minus {
+.minus,
+.plus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
+
 .heads {
   display: flex;
   flex-direction: row;
@@ -119,6 +141,16 @@
   background: #f5f5f5 0% 0% no-repeat padding-box;
   box-shadow: -4px -4px 8px #ffffff;
   opacity: 1;
+}
+
+.heads:hover,
+.tails:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.5);
+  top: -4px;
+  border: 1px solid #ffffff;
+  background-color: white;
+  cursor: pointer;
 }
 .row-center-head {
   display: flex;
@@ -203,6 +235,7 @@
   box-shadow: 0px 5px 6px #00000066;
   opacity: 1;
   padding: 5px;
+  margin: 10px;
 }
 .second {
   padding-left: 3px;
@@ -212,13 +245,14 @@
 
 .select-betting {
   font-size: xx-small;
-  margin-left: 3px;
+
   color: white;
 }
 
 .star-coin {
   display: flex;
   flex-direction: row;
+  margin: 10px;
   justify-content: center;
 }
 
@@ -256,20 +290,17 @@
   border-radius: 30px;
   opacity: 1;
 }
-
 .-bet {
-  display: flex;
-  flex-direction: column;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
 }
 .ur-bet {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 10px;
-  background: #f5f5f5 0% 0% no-repeat padding-box;
+  background: #f5f5f5 0% 0% no-repeat;
   box-shadow: 2px 2px 10px #0000004f;
   opacity: 1;
-  padding: 10px;
 }
 .head-tail-img {
   display: flex;
