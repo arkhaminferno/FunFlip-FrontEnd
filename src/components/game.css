@@ -329,3 +329,50 @@ Input {
   justify-content: center;
   padding: 10px;
 }
+
+.game-history-live {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.game-history-div {
+  display: flex;
+
+  width: 60%;
+}
+
+.game-history-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hr-line {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+
+.hr-line-id {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #ffff00;
+  height: 1px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-history-table-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 49%;
+}

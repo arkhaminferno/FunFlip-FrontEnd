@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./game.css";
 import { AiOutlineMinus } from "react-icons/ai";
 import { BsPlus } from "react-icons/bs";
-import { Button, Input, Card } from "reactstrap";
+import { Button, Input, Card, Table } from "reactstrap";
 export default class game extends Component {
   constructor() {
     super();
@@ -205,7 +205,31 @@ export default class game extends Component {
           </div>
         </div>
 
-        <div className="game-history-live"></div>
+        <div className="game-history-live">
+          <div className="game-history-div">
+            <div className="game-history-title">
+              <div>Game</div>
+              &nbsp;
+              <div>History</div>
+            </div>
+            <div className="hr-line">
+              <hr className="hr-line-id" />
+            </div>
+          </div>
+        </div>
+        <div className="game-history-table-main">
+          <div className="tabs">
+            <div className="allbets">
+              <Button></Button>
+            </div>
+            <div className="mybets">
+              <Button></Button>
+            </div>
+            <div className="topbets">
+              <Button></Button>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
