@@ -137,6 +137,7 @@ Input {
 .plus {
   display: flex;
   flex-direction: column;
+  padding: 10px;
   justify-content: center;
   cursor: pointer;
 }
