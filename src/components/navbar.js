@@ -1,23 +1,10 @@
 import React from "react";
 import "./navbar.css";
 import { FaTelegramPlane, FaTwitter } from "react-icons/fa";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
-} from "reactstrap";
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 const navbar = () => {
   return (
-    <Navbar id="navbar-bg">
+    <Navbar id="navbar-bg" sticky="top">
       <NavbarBrand>
         <img
           src="/assets/1_5017157491247546480.png"

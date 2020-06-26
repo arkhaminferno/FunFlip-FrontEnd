@@ -14,6 +14,7 @@
 Input {
   text-align: center;
 }
+
 .parent-game {
   width: 100vw;
   height: 100vh;
@@ -149,16 +150,13 @@ Input {
   background: #f5f5f5 0% 0% no-repeat padding-box;
   box-shadow: -4px -4px 8px #ffffff;
   opacity: 1;
+  cursor: pointer;
 }
 
 .heads:hover,
 .tails:hover {
-  transition: all 0.2s ease-out;
-  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-  top: -4px;
-  border: 1px solid #ffffff;
-  background-color: white;
-  cursor: pointer;
+  color: white;
+  background: #111e77;
 }
 .row-center-head {
   display: flex;
@@ -198,9 +196,9 @@ Input {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-
+  cursor: pointer;
   background: #f5f5f5 0% 0% no-repeat padding-box;
-  box-shadow: -4px -4px 8px #ffffff;
+
   opacity: 1;
 }
 
@@ -328,51 +326,4 @@ Input {
   flex-direction: row;
   justify-content: center;
   padding: 10px;
-}
-
-.game-history-live {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.game-history-div {
-  display: flex;
-
-  width: 60%;
-}
-
-.game-history-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.hr-line {
-  border: 0;
-  clear: both;
-  display: block;
-  width: 100%;
-  height: 1px;
-}
-
-.hr-line-id {
-  border: 0;
-  clear: both;
-  display: block;
-  width: 96%;
-  background-color: #ffff00;
-  height: 1px;
-}
-
-.tabs {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-history-table-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 49%;
 }

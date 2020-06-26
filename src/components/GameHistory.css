@@ -1,0 +1,91 @@
+.game-history-table-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: #1d234d 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.abq {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.text-game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: large;
+}
+
+.hr-line {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+
+  justify-content: center;
+}
+
+.hr-line-id {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: #ffff00;
+  height: 4px;
+}
+
+.game-history-live {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-history-div {
+  display: flex;
+
+  width: 70%;
+}
+
+.buttons-flex {
+  display: flex;
+  flex-direction: row;
+  background-color: #1d234d;
+}
+
+#btn {
+  border-radius: 0px;
+  background-color: white;
+  color: #666161;
+  font-size: small;
+}
+
+#btn:focus,
+#btn:hover {
+  background: #3ca7e4;
+  box-shadow: 0px 0px white;
+  color: white;
+}
+#btn:active {
+  box-shadow: 0px 0px 0px white;
+  color: white;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #1d234d;
+}
+.main-table {
+  background-color: #1d234d;
+  color: white;
+  font-size: small;
+  font: Regular 22px/27px Calibri;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}

@@ -1,8 +1,9 @@
 import React from "react";
 import "./footer.css";
+import { Container } from "reactstrap";
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer-main">
       <div className="parent-footer">
         <div className="first-footer">
           <div id="footer-title">Our Games</div>
