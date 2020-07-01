@@ -208,7 +208,7 @@ export default class game extends Component {
               </Card>
             </div>
           </div>
-
+          <br />
           <GameHistory />
         </Container>
       </div>

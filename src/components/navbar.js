@@ -9,7 +9,7 @@ const navbar = () => {
         <img
           src="/assets/1_5017157491247546480.png"
           alt="not loaded"
-          width="40%"
+          width="30%"
           height="100%"
         />
       </NavbarBrand>
