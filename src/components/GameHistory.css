@@ -84,16 +84,11 @@
   background-color: #1d234d;
 }
 
-.table-col {
-  display: flex;
-  position: relative;
-}
 .main-table {
   background-color: #1d234d;
   color: white;
   font-size: small;
   padding: 10px;
-  letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
 

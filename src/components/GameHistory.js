@@ -24,9 +24,10 @@ const Example = (props) => {
 
             <Button id="btn">Top Betters</Button>
           </div>
+
           <div className="table-row">
             <div className="table-col">
-              <Table className="main-table" responsive size="md">
+              <Table className="main-table" responsive size="sm">
                 <thead>
                   <tr>
                     <th>Player</th>
