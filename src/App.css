@@ -7,7 +7,6 @@
 }
 
 body {
-  background: url("/assets/wave.png") no-repeat,
-    linear-gradient(180deg, #2a40db, #15206e);
+  background: , linear-gradient(180deg, #2a40db, #15206e);
   background-size: 100vw 100vh;
 }

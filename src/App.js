@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Referral from "./components/refferal";
 import Navbar from "./components/navbar";
 import About from "./components/about";
 import Footer from "./components/footer";
@@ -10,7 +11,8 @@ export default class App extends Component {
     return (
       <div className="app">
         <Navbar />
-        <Game />
+        <Referral />
+        <Footer />
       </div>
     );
   }
