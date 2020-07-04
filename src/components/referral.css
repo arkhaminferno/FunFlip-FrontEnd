@@ -7,26 +7,18 @@
   background: linear-gradient(180deg, #2a40db, #15206e);
 }
 
-.parent-refer-flex {
-  display: flex;
-  flex-direction: column;
-}
 .first-div {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .second-card {
   background-image: url("/assets/affiliation.png");
-  background-size: 100%;
-  background-origin: content-box;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: top bottom;
-}
 
-.first-div-flex {
-  display: flex;
-  flex-direction: column;
+  background-position: top center;
 }
 
 .affiliation-text {
@@ -41,24 +33,15 @@
   text-align: center;
 }
 
-.second-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 5%;
-}
 .first-card {
   box-shadow: 0px 8px 20px #00000094;
   border-radius: 7px;
   opacity: 1;
-  flex: 1;
+  margin-top: 10px;
+  background-color: white;
 }
 .second-card {
   opacity: 1;
-  flex: 1;
-}
-.first-card {
-  background-color: white;
 }
 
 .no-of-referrals {
@@ -71,9 +54,8 @@
   justify-content: center;
   font: Bold large Calibri;
   letter-spacing: 0px;
-  padding: 15px;
+  padding: 5px;
   color: #898585;
-
   opacity: 1;
 }
 
@@ -110,4 +92,12 @@
   flex-direction: row;
   justify-content: space-evenly;
   border-top: 1px solid black;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .second-div {
+    display: flex;
+    flex-direction: column;
+  }
 }

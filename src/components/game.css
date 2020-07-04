@@ -48,8 +48,6 @@ Input {
   flex-direction: column;
   justify-content: center;
   flex-basis: 20vw;
-
-  background: white 0% 0% no-repeat padding-box;
 }
 
 .step-two {
