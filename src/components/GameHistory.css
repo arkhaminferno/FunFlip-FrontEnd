@@ -88,11 +88,10 @@
   background-color: #1d234d;
   color: white;
   font-size: small;
-  padding: 10px;
+
   color: #ffffff;
   opacity: 1;
 
-  text-align: left;
   text-decoration: none;
 }
 
@@ -115,4 +114,12 @@ thead {
   color: white;
   padding: 6px;
   font-size: large;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .tab {
+    width: 100%;
+    height: 100%;
+  }
 }

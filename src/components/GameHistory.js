@@ -27,7 +27,7 @@ const Example = (props) => {
 
           <div className="table-row">
             <div className="table-col">
-              <Table className="main-table" responsive size="sm">
+              <Table className="main-table" size="sm">
                 <thead>
                   <tr>
                     <th>Player</th>
