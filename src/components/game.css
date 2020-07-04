@@ -15,10 +15,6 @@ Input {
   text-align: center;
 }
 
-.parent-game {
-  width: 100vw;
-  height: 100vh;
-}
 .main-div-bg-white {
   background-color: white;
 }
@@ -42,18 +38,9 @@ Input {
   margin: 10px;
 }
 
-.step-one,
-.step-three {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-basis: 20vw;
-}
-
 .step-two {
   display: flex;
   flex-direction: column;
-  margin-top: auto;
 }
 .First {
   display: flex;
@@ -308,12 +295,12 @@ Input {
 }
 .-bet {
   background: #f5f5f5 0% 0% no-repeat padding-box;
+  padding: 5%;
 }
 .ur-bet {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 10px;
+
   background: #f5f5f5 0% 0% no-repeat;
   box-shadow: 2px 2px 10px #0000004f;
   opacity: 1;
@@ -322,5 +309,17 @@ Input {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 10px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .heads,
+  .tails {
+    justify-content: center;
+  }
 }

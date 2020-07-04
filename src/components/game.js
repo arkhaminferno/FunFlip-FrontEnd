@@ -118,7 +118,7 @@ export default class game extends Component {
                 </div>
               </Card>
             </div>
-
+            &nbsp;
             <div className="step-two">
               <div className="second-Step">
                 <div className="second">
@@ -150,6 +150,7 @@ export default class game extends Component {
                 <Button id="flip-button"> FLIP COIN</Button>
               </div>
             </div>
+            &nbsp;
             <div className="step-three">
               <div className="balances">
                 <div className="balance-align">
@@ -183,14 +184,14 @@ export default class game extends Component {
                   </div>
                   {this.state.headsclicked ? (
                     <>
-                      <div className="-bet">
+                      <Container className="-bet">
                         <div className="ur-bet">
                           <Button id="your-bet">Your Bet</Button>
                           <div className="head-tail-img">
                             <img src="assets/star-head.png" width="50%" />
                           </div>
                         </div>
-                      </div>
+                      </Container>
                     </>
                   ) : (
                     <>
