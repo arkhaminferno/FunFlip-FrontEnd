@@ -13,14 +13,6 @@
   justify-content: center;
 }
 
-.second-card {
-  background-image: url("/assets/affiliation.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  background-position: top center;
-}
-
 .affiliation-text {
   text-align: center;
   color: #ffffff;
@@ -33,15 +25,21 @@
   text-align: center;
 }
 
+.s-div {
+  display: flex;
+  flex-direction: row;
+}
+
 .first-card {
   box-shadow: 0px 8px 20px #00000094;
   border-radius: 7px;
   opacity: 1;
-  margin-top: 10px;
+
+  border: 1px solid red;
   background-color: white;
 }
 .second-card {
-  opacity: 1;
+  border: 1px solid black;
 }
 
 .no-of-referrals {

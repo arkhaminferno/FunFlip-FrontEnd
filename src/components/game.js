@@ -37,8 +37,8 @@ export default class game extends Component {
   render() {
     return (
       <div className="parent-game">
-        <Container>
-          <Row>
+        <Container className="container-parent-game">
+          <Row className="steps-row">
             <div className="steps">
               <Col>
                 <div className="step-one">
@@ -47,6 +47,7 @@ export default class game extends Component {
                       <div className="my-balance">My Balance - 100</div>
                     </div>
                   </div>
+
                   <Card>
                     <div className="first-Step">
                       <div className="First">
@@ -58,11 +59,12 @@ export default class game extends Component {
                         </div>
                       </div>
                     </div>
+
                     <div className="main-div-bg-white">
-                      <div className="details-first">
+                      <div className="details-first xhallad">
                         <div className="total-flip">0 Total Flip</div>
                       </div>
-                      <div className="youare-betting">
+                      <div className="youare-betting ayy">
                         <div className="youare-betting-align">
                           <div className="youare"> You are betting</div>
                           <div className="youare-betting-buttons">
@@ -74,6 +76,7 @@ export default class game extends Component {
                                 <Input
                                   placeholder={0 + " " + "ETH"}
                                   onChange={this.changeinAmount + " " + "ETH"}
+                                  id="ipp"
                                 ></Input>
                               </div>
                             </div>
@@ -129,7 +132,7 @@ export default class game extends Component {
                 </div>
               </Col>
 
-              <Col>
+              <Col className="container-two">
                 <div className="step-two">
                   <div className="second-Step">
                     <div className="second">
@@ -141,11 +144,13 @@ export default class game extends Component {
                       </div>
                     </div>
                   </div>
+                  <br />
                   {this.state.headsclicked ? (
                     <React.Fragment>
                       <div className="star-coin">
                         <img src="assets/star-head.png" width="50%" />
                       </div>
+                      <br />
                       <div className="selected">Heads Selected!</div>{" "}
                     </React.Fragment>
                   ) : (
@@ -153,6 +158,7 @@ export default class game extends Component {
                       <div className="star-coin">
                         <img src="assets/star-tail.png" width="50%" />
                       </div>
+                      <br />
                       <div className="selected">Tails Selected!</div>
                     </React.Fragment>
                   )}
@@ -160,7 +166,6 @@ export default class game extends Component {
                   <div className="flip-coin">
                     <Button id="flip-button"> FLIP COIN</Button>
                   </div>
-                  <br />
                 </div>
               </Col>
 

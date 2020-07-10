@@ -22,33 +22,37 @@ export default class refferal extends Component {
             </Col>
           </Row>
 
+          <br />
           <Row className="second-div">
-            <Col>
-              <div className="first-card">
-                <div className="card1">Your Referral link</div>
-                <Input
-                  placeholder="link"
-                  disabled="disabled"
-                  className="affiliate-generation"
-                >
-                  abk
-                </Input>
+            <Container className="s-div">
+              <Col>
+                <div className="first-card">
+                  <div className="card1">Your Referral link</div>
+                  <Input
+                    placeholder="link"
+                    disabled="disabled"
+                    className="affiliate-generation"
+                  >
+                    abk
+                  </Input>
 
-                <br />
-                <Container className="copy-button">
-                  <Button className="copy-button-style">Copy</Button>
-                </Container>
-                <br />
-                <Container className="social-login-flex fluid">
-                  <div className="fb">abk</div>
-                  <div className="telegram">tgr</div>
-                </Container>
-              </div>
-            </Col>
-            <Col className="second-card ">
-              <Container>ayy</Container>
-            </Col>
+                  <br />
+                  <Container className="copy-button">
+                    <Button className="copy-button-style">Copy</Button>
+                  </Container>
+                  <br />
+                  <Container className="social-login-flex fluid">
+                    <div className="fb">abk</div>
+                    <div className="telegram">tgr</div>
+                  </Container>
+                </div>
+              </Col>
+              <Col>
+                <div className="second-card "></div>
+              </Col>
+            </Container>
           </Row>
+          <br />
         </Col>
       </div>
     );
