@@ -32,7 +32,7 @@ const Example = (props) => {
                   <tr>
                     <th>Player</th>
                     <th>Bet</th>
-                    <th>Side Selected</th>
+                    <th id="side-selected">Side Selected</th>
                     <th>Result</th>
                     <th>Result</th>
                     <th>Result</th>

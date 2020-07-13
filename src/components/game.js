@@ -235,6 +235,7 @@ export default class game extends Component {
         </Container>
         <br />
         <GameHistory />
+        <br />
       </div>
     );
   }
