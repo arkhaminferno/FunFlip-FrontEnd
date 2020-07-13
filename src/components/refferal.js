@@ -44,32 +44,17 @@ export default class refferal extends Component {
                   <Container className="copy-button">
                     <Button className="copy-button-style">Copy</Button>
                   </Container>
-
+                  <br />
                   <div className="social-login-flex ">
-                    <div className="fb">
-                      <Button className="social-btn fbb ">
-                        <div className="flex-tg">
-                          <div className="tg-logo">
-                            <div className="tg-logo-align">
-                              <FaFacebook />
-                            </div>
-                          </div>
-                          <div className="share">Share on Facebook</div>
-                        </div>
-                      </Button>
-                    </div>
-                    <div className="telegram">
-                      <Button className="social-btn tgg ">
-                        <div className="flex-tg">
-                          <div className="tg-logo">
-                            <div className="tg-logo-align">
-                              <FaTelegramPlane />
-                            </div>
-                          </div>
-                          <div className="share">Share on Telegram</div>
-                        </div>
-                      </Button>
-                    </div>
+                    <Button className="social-btn fbb ">
+                      <FaFacebook />
+                      &nbsp; Share on Facebook
+                    </Button>
+
+                    <Button className="social-btn tgg ">
+                      <FaTelegramPlane />
+                      &nbsp; Share on Telegram
+                    </Button>
                   </div>
                 </div>
               </Col>

@@ -9,17 +9,17 @@
 
 .social-btn {
   border-radius: 500px;
+  line-height: 0.7em;
+  font-size: small;
 }
-.tg-logo {
+.social-login-flex {
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.tg-logo-align {
-  display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
+
 .share {
   display: flex;
   flex-direction: row;
@@ -31,13 +31,7 @@
 .tgg {
   background-color: #0088cc;
 }
-.flex-tg {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 0;
-  padding: 0;
-}
+
 .first-div {
   display: flex;
   flex-direction: row;
@@ -152,14 +146,6 @@
 }
 .copy-button-style:hover {
   background: #1d2c97 0% 0% no-repeat padding-box;
-}
-
-.social-login-flex {
-  display: flex;
-  flex-direction: row;
-
-  justify-content: center;
-  border-top: 0.001px solid black;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
