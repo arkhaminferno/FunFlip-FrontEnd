@@ -7,6 +7,37 @@
   background: linear-gradient(180deg, #2a40db, #15206e);
 }
 
+.social-btn {
+  border-radius: 500px;
+}
+.tg-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tg-logo-align {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.share {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.fbb {
+  background-color: #4267b2;
+}
+.tgg {
+  background-color: #0088cc;
+}
+.flex-tg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
 .first-div {
   display: flex;
   flex-direction: row;
@@ -31,15 +62,52 @@
 }
 
 .first-card {
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  box-shadow: 0px 8px 20px #00000094;
+  border-radius: 7px;
+  height: 190px;
+  opacity: 1;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.btn-copier {
+  padding: 10px;
+}
+.second-card {
+  background: url("/assets/refer.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 0px 8px 20px #00000094;
   border-radius: 7px;
   opacity: 1;
-
-  border: 1px solid red;
-  background-color: white;
+  height: 190px;
+  display: flex;
 }
-.second-card {
-  border: 1px solid black;
+.first-partition {
+  width: 50%;
+}
+.second-partition {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.number-of-refers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.count-refer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  font-size: xxx-large;
+  color: white;
 }
 
 .no-of-referrals {
@@ -51,6 +119,7 @@
   flex-direction: row;
   justify-content: center;
   font: Bold large Calibri;
+  text-align: center;
   letter-spacing: 0px;
   padding: 5px;
   color: #898585;
@@ -88,8 +157,9 @@
 .social-login-flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  border-top: 1px solid black;
+
+  justify-content: center;
+  border-top: 0.001px solid black;
 }
 
 /* Smartphones (portrait and landscape) ----------- */

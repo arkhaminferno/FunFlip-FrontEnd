@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import "./referral.css";
-import { FacebookLoginButton } from "react-social-login-buttons";
+
 import { Container, Button, Input, Row, Col } from "reactstrap";
+
+import { FaTelegramPlane, FaFacebook } from "react-icons/fa";
 export default class refferal extends Component {
   constructor() {
     super();
     this.state = {};
   }
+
   render() {
     return (
       <div className="parent-refer">
@@ -28,27 +31,57 @@ export default class refferal extends Component {
               <Col>
                 <div className="first-card">
                   <div className="card1">Your Referral link</div>
-                  <Input
-                    placeholder="link"
-                    disabled="disabled"
-                    className="affiliate-generation"
-                  >
-                    abk
-                  </Input>
+                  <div className="btn-copier">
+                    <Input
+                      placeholder="link"
+                      disabled="disabled"
+                      className="affiliate-generation"
+                    >
+                      abk
+                    </Input>
+                  </div>
 
-                  <br />
                   <Container className="copy-button">
                     <Button className="copy-button-style">Copy</Button>
                   </Container>
-                  <br />
-                  <Container className="social-login-flex fluid">
-                    <div className="fb">abk</div>
-                    <div className="telegram">tgr</div>
-                  </Container>
+
+                  <div className="social-login-flex ">
+                    <div className="fb">
+                      <Button className="social-btn fbb ">
+                        <div className="flex-tg">
+                          <div className="tg-logo">
+                            <div className="tg-logo-align">
+                              <FaFacebook />
+                            </div>
+                          </div>
+                          <div className="share">Share on Facebook</div>
+                        </div>
+                      </Button>
+                    </div>
+                    <div className="telegram">
+                      <Button className="social-btn tgg ">
+                        <div className="flex-tg">
+                          <div className="tg-logo">
+                            <div className="tg-logo-align">
+                              <FaTelegramPlane />
+                            </div>
+                          </div>
+                          <div className="share">Share on Telegram</div>
+                        </div>
+                      </Button>
+                    </div>
+                  </div>
                 </div>
               </Col>
               <Col>
-                <div className="second-card "></div>
+                <div className="second-card ">
+                  <div className="first-partition"></div>
+                  <div className="second-partition">
+                    <div className="number-of-refers">
+                      <div className="count-refer">5</div>
+                    </div>
+                  </div>
+                </div>
               </Col>
             </Container>
           </Row>

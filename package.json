@@ -9,12 +9,16 @@
     "bootstrap": "^4.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-facebook-login": "^4.1.1",
     "react-icons": "^3.10.0",
+    "react-native-elements": "^2.0.4",
     "react-numeric-input": "^2.2.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-social-login-buttons": "^3.1.0",
-    "reactstrap": "^8.4.1"
+    "react-telegram-login": "^1.1.2",
+    "reactstrap": "^8.4.1",
+    "telegram-login-button": "0.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
