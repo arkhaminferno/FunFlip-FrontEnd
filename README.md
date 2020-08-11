@@ -1,5 +1,9 @@
 # FunFlip-FrontEnd
 [FunFlip Twitter Page](www.twitter.com/funflipdapp)
+
+# FunFlip Smart Contract Repository Here:
+[Here](https://github.com/arkhaminferno/FunFLip-Backend-Solidity)
+
 ### Screenshot
 
 ![Landing page](https://user-images.githubusercontent.com/42605321/87408801-a2ed5e00-c5e1-11ea-994a-0181a94d20a6.png)
